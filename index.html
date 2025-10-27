@@ -544,7 +544,7 @@
             
             <div class="stats-bar">
                 <div class="stat">
-                    <div class="stat-number">2.0x - 100x</div>
+                    <div class="stat-number">6.0x - 100x</div>
                     <div class="stat-label">ODDS RANGE</div>
                 </div>
                 <div class="stat">
@@ -564,11 +564,11 @@
         <h2 class="section-title">TODAY'S <span class="accent">WINNERS</span></h2>
         
         <div class="betslips-grid">
-            <!-- Safe Play -->
+            <!-- Entry Level -->
             <div class="betslip-card">
-                <div class="card-badge">SAFE PLAY</div>
+                <div class="card-badge">ENTRY LEVEL</div>
                 <div class="odds-display">
-                    2.45x ODDS
+                    6.25x ODDS
                 </div>
 
                 <div class="matches-preview">
@@ -577,7 +577,7 @@
                             <div class="match-league">TURKISH SUPER LIG</div>
                             <div class="team-names">Fenerbahce vs Gaziantep</div>
                         </div>
-                        <div class="match-prediction">OVER 0.5</div>
+                        <div class="match-prediction">HOME WIN</div>
                     </div>
                     <div class="match-preview">
                         <div class="match-teams">
@@ -599,9 +599,9 @@
 
                 <div class="card-footer">
                     <div class="price">10</div>
-                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%202.45x%20SAFE%20PLAY%20betslip%20for%20R49" class="btn btn-whatsapp">
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%206.25x%20ENTRY%20LEVEL%20betslip%20for%20R10" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i>
-                        BUY NOW
+                        BUY FOR R10
                     </a>
                 </div>
             </div>
@@ -610,7 +610,7 @@
             <div class="betslip-card">
                 <div class="card-badge">HOT PICK</div>
                 <div class="odds-display">
-                    6.80x ODDS
+                    15.80x ODDS
                 </div>
 
                 <div class="matches-preview">
@@ -640,10 +640,10 @@
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">30</div>
-                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%206.80x%20HOT%20PICK%20betslip%20for%20R99" class="btn btn-whatsapp">
+                    <div class="price">25</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2015.80x%20HOT%20PICK%20betslip%20for%20R25" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i>
-                        GET SLIP
+                        GET FOR R25
                     </a>
                 </div>
             </div>
@@ -652,7 +652,7 @@
             <div class="betslip-card">
                 <div class="card-badge">MEGA WIN</div>
                 <div class="odds-display">
-                    18.50x ODDS
+                    38.50x ODDS
                 </div>
 
                 <div class="matches-preview">
@@ -661,7 +661,7 @@
                             <div class="match-league">DANISH SUPERLIGA</div>
                             <div class="team-names">Odense vs Brøndby</div>
                         </div>
-                        <div class="match-prediction">HOME WIN</div>
+                        <div class="match-prediction">HOME WIN/DRAW</div>
                     </div>
                     <div class="match-preview">
                         <div class="match-teams">
@@ -682,10 +682,10 @@
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">59</div>
-                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2018.50x%20MEGA%20WIN%20betslip%20for%20R149" class="btn btn-whatsapp">
+                    <div class="price">50</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2038.50x%20MEGA%20WIN%20betslip%20for%20R50" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i>
-                        MEGA WIN
+                        MEGA WIN R50
                     </a>
                 </div>
             </div>
@@ -694,7 +694,7 @@
             <div class="betslip-card">
                 <div class="card-badge">JACKPOT</div>
                 <div class="odds-display">
-                    45.25x ODDS
+                    87.25x ODDS
                 </div>
 
                 <div class="matches-preview">
@@ -717,10 +717,10 @@
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">99</div>
-                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2045.25x%20JACKPOT%20betslip%20for%20R299" class="btn btn-whatsapp">
+                    <div class="price">100</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2087.25x%20JACKPOT%20betslip%20for%20R100" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i>
-                        JACKPOT SLIP
+                        JACKPOT R100
                     </a>
                 </div>
             </div>
@@ -790,7 +790,7 @@
                 const currentOdds = parseFloat(currentText);
                 if (!isNaN(currentOdds)) {
                     const fluctuation = (Math.random() - 0.5) * 0.05;
-                    const newOdds = Math.max(2.0, currentOdds + fluctuation);
+                    const newOdds = Math.max(6.0, currentOdds + fluctuation);
                     display.textContent = newOdds.toFixed(2) + 'x ODDS';
                     
                     // Add pulse animation
@@ -827,7 +827,13 @@
                 liveBadge.innerHTML = '<i class="fas fa-circle"></i> LIVE: OCTOBER 2025';
             }
         });
+
+        // WhatsApp button test
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.btn-whatsapp')) {
+                alert('WhatsApp button working! You will be redirected to WhatsApp.');
+            }
+        });
     </script>
 </body>
 </html>
-
