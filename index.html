@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetBlazeSA 🔥 | Daily Winning Betslips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #10b981;
+            --secondary: #047857;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --success: #22c55e;
+            --money-green: #16a34a;
+            --energy: #dc2626;
+            --vip: #fbbf24;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(220, 38, 38, 0.05) 0%, transparent 50%);
+            animation: pulseBg 8s ease-in-out infinite;
+        }
+
+        @keyframes pulseBg {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 3px solid var(--energy);
+            padding: 1rem 0;
+        }
+
+        .navbar {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 0 20px var(--energy);
+        }
+
+        .logo i {
+            color: var(--energy);
+            animation: fire 2s ease-in-out infinite;
+        }
+
+        @keyframes fire {
+            0%, 100% { transform: scale(1); color: var(--energy); }
+            50% { transform: scale(1.1); color: var(--accent); }
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .live-badge {
+            background: var(--energy);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 12rem 2rem 6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--energy), var(--accent), var(--success));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(220, 38, 38, 0.3);
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 30px rgba(220, 38, 38, 0.3); }
+            50% { text-shadow: 0 0 50px rgba(220, 38, 38, 0.6); }
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+        .stat-label {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Betslips Section */
+        .betslips {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section-title .accent {
+            background: linear-gradient(45deg, var(--energy), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .betslips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .betslip-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(220, 38, 38, 0.1);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+
+        .betslip-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(220, 38, 38, 0.05), transparent);
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .betslip-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.6),
+                0 0 0 1px var(--energy);
+        }
+
+        .betslip-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--energy);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .odds-display {
+            background: linear-gradient(45deg, var(--dark), rgba(220, 38, 38, 0.2));
+            color: var(--accent);
+            padding: 1.5rem;
+            border-radius: 15px;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin: 1.5rem 0;
+            border: 2px solid var(--energy);
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+        .matches-preview {
+            margin: 2rem 0;
+        }
+
+        .match-preview {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.3);
+        }
+
+        .match-preview:last-child {
+            border-bottom: none;
+        }
+
+        .match-teams {
+            flex-grow: 1;
+        }
+
+        .match-league {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .team-names {
+            font-weight: 600;
+            color: white;
+            margin-top: 0.3rem;
+        }
+
+        .match-prediction {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .hidden-matches {
+            text-align: center;
+            color: var(--gray);
+            font-style: italic;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(100, 116, 139, 0.1);
+            border-radius: 8px;
+            border: 1px dashed var(--gray);
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .status-upcoming {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            border: 1px solid #3b82f6;
+        }
+
+        .status-won {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .status-live {
+            background: rgba(220, 38, 38, 0.2);
+            color: var(--energy);
+            border: 1px solid var(--energy);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(100, 116, 139, 0.3);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--money-green);
+            text-shadow: 0 0 20px rgba(22, 163, 74, 0.3);
+        }
+
+        .price::before {
+            content: 'R';
+            font-size: 1.5rem;
+            margin-right: 3px;
+        }
+
+        .btn {
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 900;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .btn-vip {
+            background: linear-gradient(45deg, var(--vip), #f59e0b);
+            color: black;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .floating-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+            border-top: 3px solid var(--energy);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(100, 116, 139, 0.3);
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .betslips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card-footer {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="left: 10%; animation-delay: 0s;">⚽</div>
+        <div class="floating-element" style="left: 20%; animation-delay: -2s;">🔥</div>
+        <div class="floating-element" style="left: 30%; animation-delay: -4s;">💰</div>
+        <div class="floating-element" style="left: 40%; animation-delay: -6s;">🎯</div>
+        <div class="floating-element" style="left: 50%; animation-delay: -8s;">⚡</div>
+        <div class="floating-element" style="left: 60%; animation-delay: -10s;">🏆</div>
+        <div class="floating-element" style="left: 70%; animation-delay: -12s;">💎</div>
+        <div class="floating-element" style="left: 80%; animation-delay: -14s;">🚀</div>
+        <div class="floating-element" style="left: 90%; animation-delay: -16s;">⭐</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-area">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>BetBlazeSA</span>
+                </div>
+                <div class="tagline">DAILY WINNING BETSLIPS</div>
+            </div>
+            <div class="live-badge">
+                <i class="fas fa-circle"></i>
+                LIVE: OCTOBER 2025
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>INSTANT WINNING BETSLIPS</h1>
+            <div class="hero-subtitle">Copy-Paste & Win Today • No Research Needed • Pure Profit</div>
+            
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-number">2.0x - 100x</div>
+                    <div class="stat-label">ODDS RANGE</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">NEW SLIPS</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">INSTANT</div>
+                    <div class="stat-label">WHATSAPP DELIVERY</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Betslips Section -->
+    <section class="betslips">
+        <h2 class="section-title">TODAY'S <span class="accent">WINNERS</span></h2>
+        
+        <div class="betslips-grid">
+            <!-- Low Odds -->
+            <div class="betslip-card">
+                <div class="card-badge">SAFE PLAY</div>
+                <div class="odds-display">
+                    2.15x ODDS
+                </div>
+
+                <div class="matches-preview">
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">ENGLISH PREMIER LEAGUE</div>
+                            <div class="team-names">Manchester City vs Liverpool</div>
+                        </div>
+                        <div class="match-prediction">OVER 2.5</div>
+                    </div>
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">SPANISH LA LIGA</div>
+                            <div class="team-names">Barcelona vs Real Madrid</div>
+                        </div>
+                        <div class="match-prediction">BTTS YES</div>
+                    </div>
+                </div>
+
+                <div class="hidden-matches">
+                    + 4 more matches hidden...
+                </div>
+
+                <div class="status-badge status-upcoming">
+                    <i class="fas fa-clock"></i>
+                    KICKOFF AT 14:30
+                </div>
+
+                <div class="card-footer">
+                    <div class="price">49</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%202.15x%20SAFE%20PLAY%20betslip%20for%20R49" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        BUY NOW
+                    </a>
+                </div>
+            </div>
+
+            <!-- Medium Odds -->
+            <div class="betslip-card">
+                <div class="card-badge">HOT PICK</div>
+                <div class="odds-display">
+                    8.75x ODDS
+                </div>
+
+                <div class="matches-preview">
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">UEFA CHAMPIONS LEAGUE</div>
+                            <div class="team-names">Bayern Munich vs PSG</div>
+                        </div>
+                        <div class="match-prediction">1X & OVER 1.5</div>
+                    </div>
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">ITALIAN SERIE A</div>
+                            <div class="team-names">Juventus vs AC Milan</div>
+                        </div>
+                        <div class="match-prediction">HOME WIN</div>
+                    </div>
+                </div>
+
+                <div class="hidden-matches">
+                    + 6 more matches hidden...
+                </div>
+
+                <div class="status-badge status-live">
+                    <i class="fas fa-play-circle"></i>
+                    LIVE MATCHES ONGOING
+                </div>
+
+                <div class="card-footer">
+                    <div class="price">99</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%208.75x%20HOT%20PICK%20betslip%20for%20R99" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        GET SLIP
+                    </a>
+                </div>
+            </div>
+
+            <!-- High Odds -->
+            <div class="betslip-card">
+                <div class="card-badge">MEGA WIN</div>
+                <div class="odds-display">
+                    47.20x ODDS
+                </div>
+
+                <div class="matches-preview">
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">MULTI-LEAGUE ACCA</div>
+                            <div class="team-names">6 Teams Combined</div>
+                        </div>
+                        <div class="match-prediction">MIXED BETS</div>
+                    </div>
+                </div>
+
+                <div class="hidden-matches">
+                    + 8 more matches hidden...
+                </div>
+
+                <div class="status-badge status-won">
+                    <i class="fas fa-trophy"></i>
+                    CONGRATULATIONS WE WON! 🎉
+                </div>
+
+                <div class="card-footer">
+                    <div class="price">149</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%2047.20x%20MEGA%20WIN%20betslip%20for%20R149" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        MEGA WIN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Extreme Odds -->
+            <div class="betslip-card">
+                <div class="card-badge">JACKPOT</div>
+                <div class="odds-display">
+                    112.50x ODDS
+                </div>
+
+                <div class="matches-preview">
+                    <div class="match-preview">
+                        <div class="match-teams">
+                            <div class="match-league">MEGA ACCUMULATOR</div>
+                            <div class="team-names">10 Teams Master Slip</div>
+                        </div>
+                        <div class="match-prediction">EXPERT PICKS</div>
+                    </div>
+                </div>
+
+                <div class="hidden-matches">
+                    All 10 matches expertly analyzed...
+                </div>
+
+                <div class="status-badge status-upcoming">
+                    <i class="fas fa-star"></i>
+                    KICKOFF AT 16:45 - GET READY!
+                </div>
+
+                <div class="card-footer">
+                    <div class="price">299</div>
+                    <a href="https://wa.me/27782968756?text=Hi!%20I%20want%20to%20buy%20the%20112.50x%20JACKPOT%20betslip%20for%20R299" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        JACKPOT SLIP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="color: var(--energy); margin-bottom: 1rem; font-size: 1.5rem;">BetBlazeSA</h3>
+                <p style="color: #94a3b8; line-height: 1.8;">Providing premium betting slips to South Africa since 2023. Instant WhatsApp delivery. Life-changing odds.</p>
+            </div>
+            <div>
+                <h3 style="color: var(--energy); margin-bottom: 1rem;">🚀 HOW IT WORKS</h3>
+                <p style="color: #94a3b8; margin-bottom: 0.5rem;">1. Choose your betslip</p>
+                <p style="color: #94a3b8; margin-bottom: 0.5rem;">2. Click WhatsApp button</p>
+                <p style="color: #94a3b8; margin-bottom: 0.5rem;">3. Pay & get instant slip</p>
+                <p style="color: #94a3b8;">4. Copy-paste & win! 🎯</p>
+            </div>
+            <div>
+                <h3 style="color: var(--energy); margin-bottom: 1rem;">📞 CONTACT</h3>
+                <p style="color: #94a3b8; margin-bottom: 1rem;">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i> 
+                    <strong>078 296 8756</strong>
+                </p>
+                <p style="color: #94a3b8; font-size: 0.9rem;">24/7 WhatsApp Support<br>Instant Response Guaranteed</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 BetBlazeSA | October 2025 Edition | For entertainment purposes only</p>
+            <p>Bet responsibly. Must be 18+. No guarantees. Your betting decisions are your responsibility.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic status updates
+        function updateStatuses() {
+            const statuses = document.querySelectorAll('.status-badge');
+            const statusTexts = [
+                'KICKOFF AT 14:30',
+                'LIVE MATCHES ONGOING', 
+                'CONGRATULATIONS WE WON! 🎉',
+                'KICKOFF AT 16:45 - GET READY!',
+                'MATCH STARTING SOON',
+                'WINNING IN PROGRESS 🔥',
+                'FINAL RESULT PENDING',
+                'ANOTHER WIN TODAY! 💰'
+            ];
+            
+            const statusClasses = ['status-upcoming', 'status-live', 'status-won'];
+            
+            statuses.forEach((status, index) => {
+                if (Math.random() > 0.7) { // 30% chance to update
+                    const randomText = statusTexts[Math.floor(Math.random() * statusTexts.length)];
+                    const randomClass = statusClasses[Math.floor(Math.random() * statusClasses.length)];
+                    
+                    status.textContent = randomText;
+                    status.className = 'status-badge ' + randomClass;
+                    
+                    // Add appropriate icon
+                    let icon = 'fas fa-clock';
+                    if (randomClass === 'status-live') icon = 'fas fa-play-circle';
+                    if (randomClass === 'status-won') icon = 'fas fa-trophy';
+                    
+                    status.innerHTML = `<i class="${icon}"></i> ${randomText}`;
+                }
+            });
+        }
+
+        // Update every 10 seconds
+        setInterval(updateStatuses, 10000);
+
+        // Animate odds numbers
+        function animateOdds() {
+            const oddsDisplays = document.querySelectorAll('.odds-display');
+            oddsDisplays.forEach(display => {
+                const currentText = display.textContent;
+                const currentOdds = parseFloat(currentText);
+                if (!isNaN(currentOdds)) {
+                    const fluctuation = (Math.random() - 0.5) * 0.1;
+                    const newOdds = Math.max(2.0, currentOdds + fluctuation);
+                    display.textContent = newOdds.toFixed(2) + 'x ODDS';
+                    
+                    // Add pulse animation
+                    display.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        display.style.transform = 'scale(1)';
+                    }, 200);
+                }
+            });
+        }
+
+        // Update odds every 5 seconds
+        setInterval(animateOdds, 5000);
+
+        // Floating elements animation
+        document.querySelectorAll('.floating-element').forEach((element, index) => {
+            element.style.animationDelay = `-${index * 2}s`;
+        });
+
+        // Add confetti effect on hover for won status
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.classList.contains('status-won')) {
+                e.target.style.animation = 'bounce 0.5s ease';
+                setTimeout(() => {
+                    e.target.style.animation = '';
+                }, 500);
+            }
+        });
+
+        // Auto-update the year and month
+        document.addEventListener('DOMContentLoaded', function() {
+            const liveBadge = document.querySelector('.live-badge');
+            if (liveBadge) {
+                liveBadge.innerHTML = '<i class="fas fa-circle"></i> LIVE: OCTOBER 2025';
+            }
+        });
+    </script>
+</body>
+</html>
