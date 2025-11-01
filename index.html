@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetBlazeSA 🔥 | Saturday Super Slam - November 2025</title>
+    <title>BetBlazeSA ðŸ”¥ | Sunday Redemption - November 2025</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -27,7 +27,7 @@
             --vip: #fbbf24;
             --telegram: #0088cc;
             --refund: #8b5cf6;
-            --saturday: #dc2626;
+            --sunday: #7c3aed;
             --november: #7c3aed;
         }
 
@@ -48,9 +48,9 @@
             height: 100%;
             z-index: -1;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(220, 38, 38, 0.08) 0%, transparent 50%);
+                radial-gradient(circle at 40% 40%, rgba(124, 58, 237, 0.08) 0%, transparent 50%);
             animation: pulseBg 8s ease-in-out infinite;
         }
 
@@ -66,7 +66,7 @@
             position: fixed;
             width: 100%;
             z-index: 1000;
-            border-bottom: 3px solid var(--saturday);
+            border-bottom: 3px solid var(--sunday);
             padding: 1rem 0;
         }
 
@@ -86,29 +86,29 @@
             font-size: 2rem;
             font-weight: 900;
             color: white;
-            text-shadow: 0 0 20px var(--saturday);
+            text-shadow: 0 0 20px var(--sunday);
         }
 
         .logo i {
-            color: var(--saturday);
+            color: var(--sunday);
             animation: fire 2s ease-in-out infinite;
         }
 
         @keyframes fire {
-            0%, 100% { transform: scale(1); color: var(--saturday); }
-            50% { transform: scale(1.1); color: #ef4444; }
+            0%, 100% { transform: scale(1); color: var(--sunday); }
+            50% { transform: scale(1.1); color: #8b5cf6; }
         }
 
         .tagline {
             font-size: 1rem;
-            color: var(--saturday);
+            color: var(--sunday);
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
         .live-badge {
-            background: linear-gradient(45deg, var(--saturday), var(--november));
+            background: linear-gradient(45deg, var(--sunday), var(--november));
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 25px;
@@ -141,28 +141,41 @@
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, var(--saturday), #ef4444, var(--november));
+            background: linear-gradient(45deg, var(--sunday), #8b5cf6, var(--november));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(220, 38, 38, 0.5);
+            text-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
             animation: glow 3s ease-in-out infinite;
         }
 
         @keyframes glow {
-            0%, 100% { text-shadow: 0 0 30px rgba(220, 38, 38, 0.5); }
-            50% { text-shadow: 0 0 50px rgba(220, 38, 38, 0.8); }
+            0%, 100% { text-shadow: 0 0 30px rgba(124, 58, 237, 0.5); }
+            50% { text-shadow: 0 0 50px rgba(124, 58, 237, 0.8); }
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            color: #ef4444;
+            color: #8b5cf6;
             font-weight: 700;
         }
 
-        /* NEW MONTH BANNER */
-        .new-month-banner {
-            background: linear-gradient(45deg, var(--november), #8b5cf6, var(--november));
+        /* SUNDAY BANNER */
+        .sunday-banner {
+            background: linear-gradient(45deg, #7c3aed, #8b5cf6, #7c3aed);
+            color: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            margin: 1.5rem auto;
+            max-width: 700px;
+            text-align: center;
+            border: 2px solid #8b5cf6;
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.5);
+        }
+
+        /* REDEMPTION BANNER */
+        .redemption-banner {
+            background: linear-gradient(45deg, #dc2626, #ef4444, #dc2626);
             color: white;
             padding: 1.5rem;
             border-radius: 15px;
@@ -170,29 +183,8 @@
             max-width: 800px;
             text-align: center;
             border: 3px solid #fbbf24;
-            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.6);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.6);
             animation: bounce 2s infinite;
-        }
-
-        .new-month-banner h3 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 900;
-        }
-
-        /* SATURDAY BANNER */
-        .saturday-banner {
-            background: linear-gradient(45deg, #dc2626, #ef4444, #dc2626);
-            color: white;
-            padding: 1.2rem;
-            border-radius: 12px;
-            margin: 1.5rem auto;
-            max-width: 700px;
-            text-align: center;
-            border: 2px solid #ef4444;
-            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5);
         }
 
         /* REFUND GUARANTEE BANNER */
@@ -204,12 +196,12 @@
             margin: 1.5rem auto;
             max-width: 600px;
             text-align: center;
-            border: 2px solid var(--saturday);
+            border: 2px solid var(--sunday);
         }
 
         /* Live Win Counter */
         .live-wins {
-            background: linear-gradient(45deg, var(--saturday), #ef4444);
+            background: linear-gradient(45deg, var(--sunday), #8b5cf6);
             color: white;
             padding: 1.5rem;
             border-radius: 15px;
@@ -217,7 +209,7 @@
             max-width: 600px;
             text-align: center;
             border: 3px solid var(--money-green);
-            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.6);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.6);
         }
 
         .live-wins h3 {
@@ -250,18 +242,18 @@
             text-align: center;
             backdrop-filter: blur(10px);
             min-width: 120px;
-            border: 1px solid rgba(220, 38, 38, 0.4);
+            border: 1px solid rgba(124, 58, 237, 0.4);
         }
 
         .quick-stat .number {
             font-size: 1.7rem;
             font-weight: 900;
-            color: var(--saturday);
+            color: var(--sunday);
         }
 
         .quick-stat .label {
             font-size: 0.75rem;
-            color: #ef4444;
+            color: #8b5cf6;
             text-transform: uppercase;
             font-weight: 600;
         }
@@ -277,14 +269,14 @@
             text-align: center;
             margin-bottom: 3rem;
             font-size: 2.8rem;
-            color: var(--saturday);
+            color: var(--sunday);
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+            text-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
         }
 
         .section-title .accent {
-            background: linear-gradient(45deg, #ef4444, #dc2626);
+            background: linear-gradient(45deg, #8b5cf6, #7c3aed);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -300,7 +292,7 @@
             border-radius: 18px;
             padding: 2rem;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-            border: 2px solid rgba(220, 38, 38, 0.5);
+            border: 2px solid rgba(124, 58, 237, 0.5);
             position: relative;
             transition: all 0.4s ease;
             overflow: hidden;
@@ -313,20 +305,20 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, var(--saturday), #ef4444);
+            background: linear-gradient(90deg, var(--sunday), #8b5cf6);
         }
 
         .betslip-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(220, 38, 38, 0.4);
-            border-color: var(--saturday);
+            box-shadow: 0 25px 50px rgba(124, 58, 237, 0.4);
+            border-color: var(--sunday);
         }
 
         .card-badge {
             position: absolute;
             top: 1rem;
             right: 1rem;
-            background: var(--saturday);
+            background: var(--sunday);
             color: white;
             padding: 0.4rem 1rem;
             border-radius: 20px;
@@ -344,16 +336,16 @@
         }
 
         .odds-display {
-            background: linear-gradient(45deg, var(--dark), rgba(220, 38, 38, 0.3));
-            color: var(--saturday);
+            background: linear-gradient(45deg, var(--dark), rgba(124, 58, 237, 0.3));
+            color: var(--sunday);
             padding: 1rem;
             border-radius: 12px;
             font-size: 1.8rem;
             font-weight: 900;
             text-align: center;
             margin: 1rem 0;
-            border: 2px solid var(--saturday);
-            text-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+            border: 2px solid var(--sunday);
+            text-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
         }
 
         .matches-preview {
@@ -391,7 +383,7 @@
         }
 
         .match-prediction {
-            background: var(--saturday);
+            background: var(--sunday);
             color: white;
             padding: 0.3rem 0.7rem;
             border-radius: 6px;
@@ -411,19 +403,19 @@
             font-size: 0.85rem;
         }
 
-        /* NEW MONTH BONUS */
-        .new-month-bonus {
+        /* SUNDAY BONUS */
+        .sunday-bonus {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background: rgba(124, 58, 237, 0.2);
-            color: var(--november);
+            color: var(--sunday);
             padding: 0.5rem 1rem;
             border-radius: 15px;
             font-weight: 600;
             margin: 0.5rem 0;
             font-size: 0.8rem;
-            border: 1px solid var(--november);
+            border: 1px solid var(--sunday);
             animation: pulse 2s infinite;
         }
 
@@ -461,9 +453,9 @@
         }
 
         .status-live {
-            background: rgba(220, 38, 38, 0.3);
-            color: var(--saturday);
-            border: 1px solid var(--saturday);
+            background: rgba(124, 58, 237, 0.3);
+            color: var(--sunday);
+            border: 1px solid var(--sunday);
             animation: pulse 2s infinite;
         }
 
@@ -538,10 +530,10 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
-        /* November Bundle Section */
-        .november-bundle {
+        /* Sunday Bundle Section */
+        .sunday-bundle {
             background: linear-gradient(45deg, rgba(124, 58, 237, 0.15), rgba(139, 92, 246, 0.15));
-            border: 2px solid var(--november);
+            border: 2px solid var(--sunday);
             border-radius: 15px;
             padding: 2rem;
             margin: 3rem auto;
@@ -549,8 +541,8 @@
             text-align: center;
         }
 
-        .november-bundle h3 {
-            color: var(--november);
+        .sunday-bundle h3 {
+            color: var(--sunday);
             font-size: 1.8rem;
             margin-bottom: 1rem;
             text-transform: uppercase;
@@ -591,7 +583,7 @@
             background: rgba(15, 23, 42, 0.95);
             padding: 3rem 2rem 2rem;
             margin-top: 4rem;
-            border-top: 3px solid var(--saturday);
+            border-top: 3px solid var(--sunday);
         }
 
         .footer-content {
@@ -669,14 +661,14 @@
 
     <!-- Floating Elements -->
     <div class="floating-elements">
-        <div class="floating-element" style="left: 10%; animation-delay: 0s;">🎉</div>
-        <div class="floating-element" style="left: 20%; animation-delay: -2s;">🔥</div>
-        <div class="floating-element" style="left: 30%; animation-delay: -4s;">💰</div>
-        <div class="floating-element" style="left: 40%; animation-delay: -6s;">⚡</div>
-        <div class="floating-element" style="left: 50%; animation-delay: -8s;">🏆</div>
-        <div class="floating-element" style="left: 60%; animation-delay: -10s;">🎯</div>
-        <div class="floating-element" style="left: 70%; animation-delay: -12s;">💎</div>
-        <div class="floating-element" style="left: 80%; animation-delay: -14s;">⭐</div>
+        <div class="floating-element" style="left: 10%; animation-delay: 0s;">ðŸŽ‰</div>
+        <div class="floating-element" style="left: 20%; animation-delay: -2s;">ðŸ”¥</div>
+        <div class="floating-element" style="left: 30%; animation-delay: -4s;">ðŸ’°</div>
+        <div class="floating-element" style="left: 40%; animation-delay: -6s;">âš¡</div>
+        <div class="floating-element" style="left: 50%; animation-delay: -8s;">ðŸ†</div>
+        <div class="floating-element" style="left: 60%; animation-delay: -10s;">ðŸŽ¯</div>
+        <div class="floating-element" style="left: 70%; animation-delay: -12s;">ðŸ’Ž</div>
+        <div class="floating-element" style="left: 80%; animation-delay: -14s;">â­</div>
     </div>
 
     <!-- Header -->
@@ -687,11 +679,11 @@
                     <i class="fas fa-fire"></i>
                     <span>BETBLAZESA</span>
                 </div>
-                <div class="tagline">NOVEMBER WINNING START</div>
+                <div class="tagline">SUNDAY REDEMPTION ARC</div>
             </div>
             <div class="live-badge">
                 <i class="fas fa-calendar-star"></i>
-                SAT 01 NOV 2025
+                SUN 02 NOV 2025
             </div>
         </nav>
     </header>
@@ -699,125 +691,125 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <!-- NEW MONTH BANNER -->
-            <div class="new-month-banner">
-                <h3>🎊 HAPPY NEW MONTH! 🎊</h3>
-                <p>NOVEMBER 2025 WINNING SEASON STARTS NOW! 🚀</p>
+            <!-- REDEMPTION BANNER -->
+            <div class="redemption-banner">
+                <h3>ðŸ”¥ SUNDAY REDEMPTION ARC! ðŸ”¥</h3>
+                <p>FRESH START â€¢ BETTER ANALYSIS â€¢ GUARANTEED COMEBACK! ðŸš€</p>
             </div>
 
-            <h1>SATURDAY SUPER SLAM! 💥</h1>
-            <div class="hero-subtitle">New Month • Mega Fixtures • Maximum Profits</div>
+            <h1>SUNDAY REDEMPTION! ðŸ’°</h1>
+            <div class="hero-subtitle">New Day â€¢ Better Picks â€¢ Maximum Profits</div>
             
-            <!-- SATURDAY BANNER -->
-            <div class="saturday-banner">
-                <h3>⚽ FOOTBALL FESTIVAL SATURDAY ⚽</h3>
-                <p>100+ Matches • All Major Leagues • Non-Stop Action!</p>
+            <!-- SUNDAY BANNER -->
+            <div class="sunday-banner">
+                <h3>âš½ SUNDAY FOOTBALL FESTIVAL âš½</h3>
+                <p>40+ Matches â€¢ All Major Leagues â€¢ Redemption Day! ðŸŽ¯</p>
             </div>
 
             <!-- REFUND GUARANTEE BANNER -->
             <div class="refund-banner">
-                <h3>🛡️ 100% NEW MONTH REFUND GUARANTEE</h3>
-                <p>Start November risk-free! Money back on any losing slip! 💰</p>
+                <h3>ðŸ›¡ï¸ SUNDAY RISK-FREE GUARANTEE</h3>
+                <p>Redemption day special! Money back on any losing slip! ðŸ’°</p>
             </div>
 
             <!-- Live Win Counter -->
             <div class="live-wins">
-                <h3>💰 NOVEMBER WINNING STARTED</h3>
-                <div class="win-counter">R<span id="liveWins">24,580</span></div>
-                <p>🎯 New month profits exploding already!</p>
+                <h3>ðŸ’° SUNDAY WINNING ACTIVATED</h3>
+                <div class="win-counter">R<span id="liveWins">18,950</span></div>
+                <p>ðŸŽ¯ Sunday profits loading now!</p>
             </div>
 
             <!-- Quick Stats -->
             <div class="quick-stats">
                 <div class="quick-stat">
-                    <div class="number">9x-85x</div>
-                    <div class="label">NOVEMBER ODDS</div>
+                    <div class="number">8x-65x</div>
+                    <div class="label">SUNDAY ODDS</div>
                 </div>
                 <div class="quick-stat">
                     <div class="number">R10-R99</div>
                     <div class="label">PRICES</div>
                 </div>
                 <div class="quick-stat">
-                    <div class="number">🎁 BONUS</div>
+                    <div class="number">ðŸŽ BONUS</div>
                     <div class="label">ACTIVE</div>
                 </div>
                 <div class="quick-stat">
-                    <div class="number">100+</div>
+                    <div class="number">40+</div>
                     <div class="label">MATCHES</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- November Bundle Offer -->
-    <section class="november-bundle">
-        <h3>🎯 NOVEMBER WINNING BUNDLE 🎯</h3>
-        <p>Get ALL November weekend slips at 40% OFF! Perfect new month start!</p>
-        <div class="bundle-price">R299</div>
-        <p>Instead of R498 separately • Save R199! 🚀</p>
-        <button class="btn btn-whatsapp" onclick="contactWhatsApp('NOVEMBER WINNING BUNDLE', 299)" style="margin-top: 1rem;">
+    <!-- Sunday Bundle Offer -->
+    <section class="sunday-bundle">
+        <h3>ðŸŽ¯ SUNDAY REDEMPTION BUNDLE ðŸŽ¯</h3>
+        <p>Get ALL Sunday premium slips at 50% OFF! Perfect comeback strategy!</p>
+        <div class="bundle-price">R199</div>
+        <p>Instead of R398 separately â€¢ Save R199! ðŸš€</p>
+        <button class="btn btn-whatsapp" onclick="contactWhatsApp('SUNDAY REDEMPTION BUNDLE', 199)" style="margin-top: 1rem;">
             <i class="fab fa-whatsapp"></i>
-            START NOVEMBER WINNING
+            START SUNDAY WINNING
         </button>
     </section>
 
     <!-- Betslips Section -->
     <section class="betslips" id="codes">
-        <h2 class="section-title">SATURDAY'S <span class="accent">MEGA SLAMS</span></h2>
+        <h2 class="section-title">SUNDAY'S <span class="accent">REDEMPTION SLIPS</span></h2>
         
         <div class="betslips-grid">
-            <!-- SA Derby Special -->
+            <!-- SA Sunday Special -->
             <div class="betslip-card">
                 <div class="card-badge">SA DERBY</div>
                 <div class="odds-display">
-                    9.25x
+                    7.85x
                 </div>
 
                 <div class="matches-preview">
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">SA PREMIERSHIP</div>
-                            <div class="team-names">Sundowns vs Pirates</div>
+                            <div class="team-names">TS Galaxy vs Stellenbosch</div>
                         </div>
                         <div class="match-prediction">1X</div>
                     </div>
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">SA PREMIERSHIP</div>
-                            <div class="team-names">Chippa vs Amazulu</div>
+                            <div class="team-names">Golden Arrows vs Marumo</div>
                         </div>
-                        <div class="match-prediction">BTTS YES</div>
+                        <div class="match-prediction">OVER 1.5</div>
                     </div>
                 </div>
 
                 <div class="hidden-matches">
-                    + 2 SA matches hidden...
+                    + 3 SA matches hidden...
                 </div>
 
-                <!-- NEW MONTH BONUS -->
-                <div class="new-month-bonus">
+                <!-- SUNDAY BONUS -->
+                <div class="sunday-bonus">
                     <i class="fas fa-calendar-plus"></i>
-                    NEW MONTH BONUS!
+                    SUNDAY REDEMPTION BONUS!
                 </div>
 
                 <div class="refund-badge">
                     <i class="fas fa-shield-alt"></i>
-                    NOVEMBER REFUND!
+                    RISK-FREE SUNDAY!
                 </div>
 
                 <div class="result-status status-live">
                     <i class="fas fa-play-circle"></i>
-                    DERBY DAY READY! 🔥
+                    SA ACTION READY! ðŸ”¥
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">10</div>
+                    <div class="price">15</div>
                     <div class="contact-buttons">
-                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('9.25x SA DERBY', 10)">
+                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('7.85x SA SUNDAY', 15)">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </button>
-                        <button class="btn btn-telegram" onclick="contactTelegram('9.25x SA DERBY', 10)">
+                        <button class="btn btn-telegram" onclick="contactTelegram('7.85x SA SUNDAY', 15)">
                             <i class="fab fa-telegram"></i>
                             Telegram
                         </button>
@@ -825,37 +817,37 @@
                 </div>
             </div>
 
-            <!-- Premier League Mega -->
+            <!-- Premier League Sunday -->
             <div class="betslip-card">
                 <div class="card-badge">PREMIER LEAGUE</div>
                 <div class="odds-display">
-                    22.50x
+                    15.20x
                 </div>
 
                 <div class="matches-preview">
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">ENGLAND PL</div>
-                            <div class="team-names">Tottenham vs Chelsea</div>
+                            <div class="team-names">West Ham vs Newcastle</div>
                         </div>
-                        <div class="match-prediction">OVER 2.5</div>
+                        <div class="match-prediction">BTTS YES</div>
                     </div>
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">ENGLAND PL</div>
-                            <div class="team-names">Liverpool vs Villa</div>
+                            <div class="team-names">Man City vs Bournemouth</div>
                         </div>
                         <div class="match-prediction">HOME WIN</div>
                     </div>
                 </div>
 
                 <div class="hidden-matches">
-                    + 4 PL matches hidden...
+                    + 2 PL matches hidden...
                 </div>
 
-                <div class="new-month-bonus">
+                <div class="sunday-bonus">
                     <i class="fas fa-calendar-plus"></i>
-                    NOVEMBER SPECIAL!
+                    SUNDAY SPECIAL!
                 </div>
 
                 <div class="refund-badge">
@@ -865,17 +857,17 @@
 
                 <div class="result-status status-live">
                     <i class="fas fa-bolt"></i>
-                    PL MEGA SATURDAY! ⚡
+                    PL SUNDAY ACTION! âš¡
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">25</div>
+                    <div class="price">20</div>
                     <div class="contact-buttons">
-                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('22.50x PREMIER LEAGUE', 25)">
+                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('15.20x PREMIER LEAGUE', 20)">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </button>
-                        <button class="btn btn-telegram" onclick="contactTelegram('22.50x PREMIER LEAGUE', 25)">
+                        <button class="btn btn-telegram" onclick="contactTelegram('15.20x PREMIER LEAGUE', 20)">
                             <i class="fab fa-telegram"></i>
                             Telegram
                         </button>
@@ -883,37 +875,37 @@
                 </div>
             </div>
 
-            <!-- European Super Saturday -->
+            <!-- European Super Sunday -->
             <div class="betslip-card">
                 <div class="card-badge">EURO SUPER</div>
                 <div class="odds-display">
-                    42.75x
+                    28.45x
                 </div>
 
                 <div class="matches-preview">
                     <div class="match-preview">
                         <div class="match-teams">
-                            <div class="match-league">BUNDESLIGA</div>
-                            <div class="team-names">Bayern vs Leverkusen</div>
+                            <div class="match-league">SERIE A</div>
+                            <div class="team-names">AC Milan vs AS Roma</div>
                         </div>
-                        <div class="match-prediction">BTTS YES</div>
+                        <div class="match-prediction">OVER 2.5</div>
                     </div>
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">LA LIGA</div>
-                            <div class="team-names">Real Madrid vs Valencia</div>
+                            <div class="team-names">Barcelona vs Elche</div>
                         </div>
                         <div class="match-prediction">HOME WIN</div>
                     </div>
                 </div>
 
                 <div class="hidden-matches">
-                    + 6 European matches hidden...
+                    + 5 European matches hidden...
                 </div>
 
-                <div class="new-month-bonus">
+                <div class="sunday-bonus">
                     <i class="fas fa-calendar-plus"></i>
-                    NEW MONTH MEGA BONUS!
+                    SUNDAY MEGA BONUS!
                 </div>
 
                 <div class="refund-badge">
@@ -923,17 +915,17 @@
 
                 <div class="result-status status-won">
                     <i class="fas fa-trophy"></i>
-                    EURO EXPERT: 7/9 WON! 💰
+                    EURO EXPERT: 6/8 WON! ðŸ’°
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">50</div>
+                    <div class="price">35</div>
                     <div class="contact-buttons">
-                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('42.75x EURO SUPER', 50)">
+                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('28.45x EURO SUPER', 35)">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </button>
-                        <button class="btn btn-telegram" onclick="contactTelegram('42.75x EURO SUPER', 50)">
+                        <button class="btn btn-telegram" onclick="contactTelegram('28.45x EURO SUPER', 35)">
                             <i class="fab fa-telegram"></i>
                             Telegram
                         </button>
@@ -941,50 +933,50 @@
                 </div>
             </div>
 
-            <!-- Saturday Jackpot -->
+            <!-- Sunday Jackpot -->
             <div class="betslip-card">
-                <div class="card-badge">SATURDAY JACKPOT</div>
+                <div class="card-badge">SUNDAY JACKPOT</div>
                 <div class="odds-display">
-                    78.45x
+                    45.80x
                 </div>
 
                 <div class="matches-preview">
                     <div class="match-preview">
                         <div class="match-teams">
                             <div class="match-league">MEGA ACCUMULATOR</div>
-                            <div class="team-names">10 Top Saturday Matches</div>
+                            <div class="team-names">8 Top Sunday Matches</div>
                         </div>
                         <div class="match-prediction">EXPERT PICKS</div>
                     </div>
                 </div>
 
                 <div class="hidden-matches">
-                    All premium Saturday fixtures included...
+                    All premium Sunday fixtures included...
                 </div>
 
-                <div class="new-month-bonus">
+                <div class="sunday-bonus">
                     <i class="fas fa-calendar-plus"></i>
-                    NOVEMBER JACKPOT BONUS!
+                    SUNDAY JACKPOT BONUS!
                 </div>
 
                 <div class="refund-badge">
                     <i class="fas fa-shield-alt"></i>
-                    NEW MONTH GUARANTEE!
+                    REDEMPTION GUARANTEE!
                 </div>
 
                 <div class="result-status status-pending">
                     <i class="fas fa-clock"></i>
-                    KICKOFFS 13:30-21:30
+                    KICKOFFS 12:30-21:00
                 </div>
 
                 <div class="card-footer">
-                    <div class="price">99</div>
+                    <div class="price">75</div>
                     <div class="contact-buttons">
-                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('78.45x SATURDAY JACKPOT', 99)">
+                        <button class="btn btn-whatsapp" onclick="contactWhatsApp('45.80x SUNDAY JACKPOT', 75)">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </button>
-                        <button class="btn btn-telegram" onclick="contactTelegram('78.45x SATURDAY JACKPOT', 99)">
+                        <button class="btn btn-telegram" onclick="contactTelegram('45.80x SUNDAY JACKPOT', 75)">
                             <i class="fab fa-telegram"></i>
                             Telegram
                         </button>
@@ -998,17 +990,17 @@
     <footer>
         <div class="footer-content">
             <div>
-                <h3 style="color: var(--saturday); margin-bottom: 1rem;">BETBLAZESA</h3>
-                <p style="color: #94a3b8; line-height: 1.6;">Starting November 2025 with explosive winning energy! 🚀</p>
+                <h3 style="color: var(--sunday); margin-bottom: 1rem;">BETBLAZESA</h3>
+                <p style="color: #94a3b8; line-height: 1.6;">Sunday Redemption Arc activated! Fresh start, better wins! ðŸš€</p>
             </div>
             <div>
-                <h3 style="color: var(--saturday); margin-bottom: 1rem;">🎊 NOVEMBER BONUS</h3>
-                <p style="color: #94a3b8; margin-bottom: 0.3rem;">• New month special offers</p>
-                <p style="color: #94a3b8; margin-bottom: 0.3rem;">• November bundle: R299</p>
-                <p style="color: #94a3b8;">• 100% new month refund</p>
+                <h3 style="color: var(--sunday); margin-bottom: 1rem;">ðŸŽŠ SUNDAY BONUS</h3>
+                <p style="color: #94a3b8; margin-bottom: 0.3rem;">â€¢ Redemption special offers</p>
+                <p style="color: #94a3b8; margin-bottom: 0.3rem;">â€¢ Sunday bundle: R199</p>
+                <p style="color: #94a3b8;">â€¢ 100% refund guarantee</p>
             </div>
             <div>
-                <h3 style="color: var(--saturday); margin-bottom: 1rem;">📱 CONTACT</h3>
+                <h3 style="color: var(--sunday); margin-bottom: 1rem;">ðŸ“± CONTACT</h3>
                 <p style="color: #94a3b8; margin-bottom: 0.5rem;">
                     <i class="fab fa-whatsapp" style="color: #25D366;"></i> 
                     <strong>078 296 8756</strong>
@@ -1020,8 +1012,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>© 2025 BetBlazeSA | Saturday Super Slam | 01 November 2025 | Happy New Month! 🎉</p>
-            <p>Bet responsibly. 18+ only. New month energy brings new winning opportunities!</p>
+            <p>Â© 2025 BetBlazeSA | Sunday Redemption | 02 November 2025 | Fresh Start! ðŸŽ‰</p>
+            <p>Bet responsibly. 18+ only. Sunday redemption brings new winning opportunities!</p>
         </div>
     </footer>
 
@@ -1029,57 +1021,57 @@
         // GUARANTEED WORKING CONTACT FUNCTIONS
         function contactWhatsApp(packageName, price) {
             const phone = "27782968756";
-            const message = `🎉 HAPPY NEW MONTH! I want ${packageName} for R${price}. November winning starts now!`;
+            const message = `ðŸ”¥ SUNDAY REDEMPTION! I want ${packageName} for R${price}. Let's bounce back today!`;
             const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
             
             window.location.href = url;
             
             setTimeout(() => {
-                alert(`🎊 NOVEMBER WINNING ACTIVATED!\n\n📦 ${packageName} - R${price}\n\n🎁 New Month Special Bonus!\n🛡️ 100% Refund Guarantee\n💰 Start November with profits!\n\n📱 If WhatsApp didn't open, message 078 296 8756`);
+                alert(`ðŸŽŠ SUNDAY WINNING ACTIVATED!\n\nðŸ“¦ ${packageName} - R${price}\n\nðŸŽ Sunday Redemption Bonus!\nðŸ›¡ï¸ 100% Refund Guarantee\nðŸ’° Bounce back with profits!\n\nðŸ“± If WhatsApp didn't open, message 078 296 8756`);
             }, 1000);
         }
 
         function contactTelegram(packageName, price) {
             const username = "BetBlazeSA";
-            const message = `🎉 Happy New Month! I want ${packageName} for R${price}. Let's start November winning!`;
+            const message = `ðŸ”¥ Sunday Redemption! I want ${packageName} for R${price}. Let's win today!`;
             const url = `https://t.me/${username}?text=${encodeURIComponent(message)}`;
             
             window.open(url, '_blank');
             
             setTimeout(() => {
-                alert(`🎊 NOVEMBER WINNING STARTS!\n\n${packageName} - R${price}\n\n⚡ New Month Energy!\n🎁 Special November Bonus!\n🛡️ Risk-free new month start!`);
+                alert(`ðŸŽŠ SUNDAY REDEMPTION STARTS!\n\n${packageName} - R${price}\n\nâš¡ Fresh Start Energy!\nðŸŽ Special Sunday Bonus!\nðŸ›¡ï¸ Risk-free redemption day!`);
             }, 1000);
         }
 
-        // Live Win Counter - Higher for new month
+        // Live Win Counter - Higher for redemption day
         function updateLiveWins() {
             const winElement = document.getElementById('liveWins');
             const currentWins = parseInt(winElement.textContent.replace(/,/g, ''));
-            const randomIncrease = Math.floor(Math.random() * 350) + 150;
+            const randomIncrease = Math.floor(Math.random() * 280) + 120;
             const newWins = currentWins + randomIncrease;
             winElement.textContent = newWins.toLocaleString();
         }
 
-        // New Month themed content rotation
-        function rotateNewMonthContent() {
+        // Sunday themed content rotation
+        function rotateSundayContent() {
             // Rotate result statuses
             const statuses = document.querySelectorAll('.result-status');
             const statusTypes = ['status-won', 'status-live', 'status-pending'];
             const statusTexts = [
-                {icon: 'fas fa-play-circle', text: 'NOVEMBER READY! 🔥'},
-                {icon: 'fas fa-bolt', text: 'NEW MONTH ENERGY! ⚡'},
-                {icon: 'fas fa-trophy', text: 'OCTOBER: R89K WON! 💰'},
-                {icon: 'fas fa-star', text: 'MONTH START WINNING! 🌟'},
-                {icon: 'fas fa-calendar-star', text: 'NOVEMBER CHAMPION! 🎯'}
+                {icon: 'fas fa-play-circle', text: 'REDEMPTION READY! ðŸ”¥'},
+                {icon: 'fas fa-bolt', text: 'SUNDAY ENERGY! âš¡'},
+                {icon: 'fas fa-trophy', text: 'BOUNCE BACK MODE! ðŸ’°'},
+                {icon: 'fas fa-star', text: 'FRESH START WINS! ðŸŒŸ'},
+                {icon: 'fas fa-calendar-star', text: 'SUNDAY CHAMPION! ðŸŽ¯'}
             ];
 
-            // Rotate new month bonuses
+            // Rotate sunday bonuses
             const bonusTexts = [
-                'NEW MONTH BONUS!',
-                'NOVEMBER SPECIAL!',
-                'NEW MONTH MEGA BONUS!',
-                'NOVEMBER JACKPOT BONUS!',
-                'MONTH START SPECIAL!'
+                'SUNDAY REDEMPTION BONUS!',
+                'SUNDAY SPECIAL!',
+                'SUNDAY MEGA BONUS!',
+                'SUNDAY JACKPOT BONUS!',
+                'REDEMPTION DAY SPECIAL!'
             ];
 
             statuses.forEach(status => {
@@ -1092,8 +1084,8 @@
                 }
             });
 
-            // Update new month bonuses
-            document.querySelectorAll('.new-month-bonus').forEach(bonus => {
+            // Update sunday bonuses
+            document.querySelectorAll('.sunday-bonus').forEach(bonus => {
                 if (Math.random() > 0.8) {
                     const randomText = bonusTexts[Math.floor(Math.random() * bonusTexts.length)];
                     bonus.innerHTML = `<i class="fas fa-calendar-plus"></i> ${randomText}`;
@@ -1107,8 +1099,8 @@
             odds.forEach(odd => {
                 const current = parseFloat(odd.textContent);
                 if (!isNaN(current)) {
-                    const change = (Math.random() - 0.5) * 0.4;
-                    const newOdds = Math.max(9.0, current + change);
+                    const change = (Math.random() - 0.5) * 0.3;
+                    const newOdds = Math.max(7.0, current + change);
                     odd.textContent = newOdds.toFixed(2) + 'x';
                     
                     odd.style.transform = 'scale(1.05)';
@@ -1118,19 +1110,19 @@
         }
 
         // Initialize everything
-        setInterval(updateLiveWins, 12000);
-        setInterval(rotateNewMonthContent, 8000);
-        setInterval(animateOdds, 5000);
+        setInterval(updateLiveWins, 10000);
+        setInterval(rotateSundayContent, 7000);
+        setInterval(animateOdds, 4000);
 
         // Floating elements
         document.querySelectorAll('.floating-element').forEach((el, i) => {
             el.style.animationDelay = `-${i * 2}s`;
         });
 
-        console.log('🚀 BetBlazeSA NOVEMBER 2025 EDITION LOADED!');
-        console.log('🎉 Saturday 01 November 2025 - New Month Winning Start!');
-        console.log('🎁 November Bundle: R299 for all weekend slips!');
-        console.log('💰 Higher new month energy activated!');
+        console.log('ðŸš€ BetBlazeSA SUNDAY REDEMPTION EDITION LOADED!');
+        console.log('ðŸŽ‰ Sunday 02 November 2025 - Redemption Day Activated!');
+        console.log('ðŸŽ Sunday Bundle: R199 for all premium slips!');
+        console.log('ðŸ’° Redemption energy maximized!');
     </script>
 </body>
 </html>
